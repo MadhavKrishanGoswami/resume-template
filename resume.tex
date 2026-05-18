@@ -1,0 +1,165 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Madhav Krishan Goswami
+% Repo   : https://github.com/MadhavKrishanGoswami/resume-template
+% License: MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Your Name} \\ \vspace{1pt}
+    \small +00-000-000-0000 $|$ \href{mailto:your.email@example.com}{your.email@example.com} \\
+    \href{https://www.linkedin.com/in/your-handle/}{linkedin.com/in/your-handle} $|$
+    \href{https://github.com/your-handle}{github.com/your-handle} \\
+    \href{https://yourblog.example.com}{yourblog.example.com}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Company Name}{Start Date -- End Date}
+      {Job Title}{Location}
+      \resumeItemListStart
+        \resumeItem{Built/shipped \textbf{something measurable} using \textbf{X technology}, achieving a concrete result.}
+        \resumeItem{Optimized \textbf{some system} by \textbf{X\%}, reducing latency / cost / errors.}
+        \resumeItem{Collaborated cross-functionally to deliver \textbf{a feature or system} under \textbf{constraints}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Previous Company}{Start Date -- End Date}
+      {Role}{Location}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{tool / pipeline / service} using \textbf{stack}, with a measurable business outcome.}
+        \resumeItem{Automated \textbf{workflow} via \textbf{CI/CD}, reducing defects by \textbf{X\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Project Name} $|$ \emph{Tech Stack, Concepts}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered \textbf{a system / feature} that solves \textbf{a real problem} at \textbf{some scale}.}
+            \resumeItem{Implemented \textbf{a core component} using \textbf{a specific technology} for performance/reliability.}
+            \resumeItem{Designed \textbf{a design pattern / mechanism} that improved \textbf{a metric}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Another Project} $|$ \emph{Tech Stack}}{}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{a feature} using \textbf{technology}, supporting \textbf{N users / requests}.}
+            \resumeItem{Handled \textbf{a hard problem} (concurrency / scaling / data integrity).}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Name}{Location}
+      {Degree, Major}{Start Date -- End Date}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Course 1, Course 2, Course 3, Course 4}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Language 1, Language 2, Language 3} \\
+     \textbf{Cloud \& Infra}{: Tool 1, Tool 2, Tool 3} \\
+     \textbf{Backend}{: Pattern 1, Pattern 2, Pattern 3} \\
+     \textbf{Data Systems}{: DB 1, DB 2, Cache, Queue} \\
+     \textbf{Tools}{: Git, Linux, Observability, CI/CD}
+    }}
+ \end{itemize}
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Certifications \& Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certification Name} (Date) \\
+     \textbf{Award / Recognition} -- Source (Date) \\
+     \textbf{Course / Achievement} -- Score / Detail (Date)
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

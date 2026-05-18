@@ -108,7 +108,3 @@ Open `resume.tex` and replace the placeholders:
 
 Created by **Madhav Krishan Goswami**
 [GitHub](https://github.com/MadhavKrishanGoswami) · [LinkedIn](https://www.linkedin.com/in/madhavkrishangoswami/) · [Blog](https://madhavkrishangoswami.hashnode.dev/)
-
-Inspired by the [Jake's Resume](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs) lineage of LaTeX templates, with structural and content tweaks for backend/distributed-systems roles.
-
-If this template helped you land an interview, drop a ⭐ on the repo!
